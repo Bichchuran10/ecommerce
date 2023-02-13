@@ -1,0 +1,15 @@
+const path = require('path');
+
+const rootDir = require('../util/path');
+
+
+exports.contactuscontroller=(req,res,next)=>{
+    res.sendFile(path.join(rootDir,'views','contact.html'))
+  }
+
+
+exports.postContactUs=(req,res,next)=>{
+      console.log(req.body)
+      res.redirect('/success')
+}
+
