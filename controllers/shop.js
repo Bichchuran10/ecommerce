@@ -180,6 +180,7 @@ exports.getOrders = (req, res, next) => {
       orders:orders
     });
   })
+  .catch(err=>console.log(err))
 };
 
 
